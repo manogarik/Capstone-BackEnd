@@ -74,6 +74,16 @@ async function seedFlights(req, res) {
                 arrivalTime: "2025-06-10T08:00:00Z",
                 status: "On Time",
                 price:160
+            },
+            {
+                flightNumber: "FM009",
+                origin: "IAD",
+                destination: "RDU",
+                departureDate:"2025-09-17",
+                departureTime: "2025-09-17T07:00:00Z",
+                arrivalTime: "2025-09-17T08:00:00Z",
+                status: "On Time",
+                price:150
             }
             
         );
@@ -92,4 +102,36 @@ async function getFlights(req, res) {
     }
 }
 
- export {seedFlights,getFlights}
+//create Flight
+async function createFlight(req, res) {
+    try {
+        
+        const flight = await Flight.create(req.body);
+        console.log(flight);
+        res.status(201).json(flight);
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
+}
+
+async function searchFlight(req, res){
+    const { origin, destination } = req.query;
+  
+    try {
+      const flights = await Flight.find({
+        origin: origin,
+        destination: destination
+      });
+  
+      res.json(flights);
+    } catch (err) {
+      res.status(500).json({ message: 'Error fetching flights', error: err });
+    }
+  };
+  
+  
+  
+  
+  
+
+ export {seedFlights,getFlights,createFlight,searchFlight}

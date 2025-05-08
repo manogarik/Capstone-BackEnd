@@ -24,9 +24,10 @@ router.get('/', flightsController.getFlights);
 // // Update
 // router.patch('/:id', flightsController.updateFlight);
 // // Create
-// router.post('/', flightsController.createFlight);
+ router.post('/', flightsController.createFlight);
 // // Edit
 // // Show
-// router.get('/:id',flightsController.showFlight);
+//  router.get('/:origin/:destination',flightsController.showFlight);
+ router.get('/search',flightsController.searchFlight);
 
 export default router;
