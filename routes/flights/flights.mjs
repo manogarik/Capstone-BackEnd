@@ -30,4 +30,8 @@ router.get('/', flightsController.getFlights);
 //  router.get('/:origin/:destination',flightsController.showFlight);
  router.get('/search',flightsController.searchFlight);
 
+ //router to get distinct airports
+ router.get('/airports',flightsController.airports);
+
+
 export default router;

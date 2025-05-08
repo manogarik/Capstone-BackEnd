@@ -129,9 +129,22 @@ async function searchFlight(req, res){
     }
   };
   
+  async function airports(req,res){
+    try {
+        const origins = await Flight.distinct('origin');
+        const destinations = await Flight.distinct('destination');
+        res.json({ origins, destinations });
+      } 
+     
+      catch (err) {
+        res.status(500).json({ message: 'Error fetching airports', error: err });
+      }
+     
+    };
+  
   
   
   
   
 
- export {seedFlights,getFlights,createFlight,searchFlight}
+ export {seedFlights,getFlights,createFlight,searchFlight,airports}

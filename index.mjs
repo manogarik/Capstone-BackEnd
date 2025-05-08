@@ -2,6 +2,7 @@ import express from "express"
 import mongoose from "mongoose"
 import dotenv from "dotenv" 
 import flightsRouter from './routes/flights/flights.mjs';
+import passengersRouter from './routes/Passengers/passengers.mjs';
 dotenv.config()
 
 const app = express();
@@ -12,6 +13,7 @@ app.use(express.urlencoded());
 app.use(express.json());
 
 app.use('/flights', flightsRouter);
+app.use('/passengers',passengersRouter);
 
 app.get('/',(req,res)=>
     {
