@@ -1,10 +1,14 @@
 import mongoose from "mongoose";
 
 const passengerSchema = new mongoose.Schema({
-    name: {
+    firstName: {
         type: String,
         required : true,
         
+    },
+    lastName:{
+        type:String,
+        required : true,
     },
     email : {
         type:String,
