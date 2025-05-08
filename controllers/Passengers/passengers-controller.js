@@ -1,0 +1,1 @@
+import Passenger from "../../Models/Passengers.mjs"

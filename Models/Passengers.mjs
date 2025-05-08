@@ -1,7 +1,23 @@
 import mongoose from "mongoose";
 
-const passengerSchema = [
-    {
+const passengerSchema = new mongoose.Schema({
+    name: {
+        type: String,
+        required : true,
         
+    },
+    email : {
+        type:String,
+        lowercase:true,
+        match: [/^\S+@\S+\.\S+$/, 'Please provide a valid email address'],
+        unique:true,
+        required:true,
+    },
+    age : {
+        type:Number,
+        required:true
     }
-]
+
+    })
+
+    export default mongoose.model("Passenger", passengerSchema)
