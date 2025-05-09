@@ -20,8 +20,9 @@ const passengerSchema = new mongoose.Schema({
     age : {
         type:Number,
         required:true
-    }
-
-    })
+    },
+    passengers: [{ type: mongoose.Schema.Types.ObjectId, ref: 'passengers' }],
+},
+{timestamps:true});
 
     export default mongoose.model("Passenger", passengerSchema)
