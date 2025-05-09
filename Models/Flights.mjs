@@ -48,7 +48,10 @@ const flightSchema = new mongoose.Schema({
     price:{
         type : Number,
         required :true
-    }
-})
+    },
+    passengers: [{ type: mongoose.Schema.Types.ObjectId, ref: 'passengers' }]},
+    {timestamps:true}
+);
+
 
 export default mongoose.model("Flight", flightSchema);
