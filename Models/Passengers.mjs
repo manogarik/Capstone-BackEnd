@@ -21,8 +21,8 @@ const passengerSchema = new mongoose.Schema({
         type:Number,
         required:true
     },
-    passengers: [{ type: mongoose.Schema.Types.ObjectId, ref: 'passengers' }],
-},
-{timestamps:true});
+    flightId: { type: mongoose.Schema.Types.ObjectId, ref: 'flights' }
+    
+});
 
     export default mongoose.model("Passenger", passengerSchema)
