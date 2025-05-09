@@ -1,6 +1,7 @@
 import express from "express"
 import mongoose from "mongoose"
 import dotenv from "dotenv" 
+import cors from "cors"
 import flightsRouter from './routes/flights/flights.mjs';
 import passengersRouter from './routes/Passengers/passengers.mjs';
 dotenv.config()
@@ -11,6 +12,7 @@ const PORT = process.env.PORT || 3000;
 //Middleware
 app.use(express.urlencoded());
 app.use(express.json());
+app.use(cors());
 
 app.use('/flights', flightsRouter);
 app.use('/passengers',passengersRouter);
