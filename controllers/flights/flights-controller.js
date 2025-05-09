@@ -141,6 +141,15 @@ async function searchFlight(req, res){
       }
      
     };
+
+    async function getFlightPassgenerInfo(req, res) {
+        try {
+          const flight = await Flight.findById(req.params.id).populate('passengers');
+          res.json(flight);
+        } catch(error) {
+          res.status(400).json({ error: error.message });
+        }
+      }
   
   
   
