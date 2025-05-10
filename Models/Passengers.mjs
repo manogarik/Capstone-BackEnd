@@ -21,7 +21,7 @@ const passengerSchema = new mongoose.Schema({
         type:Number,
         required:true
     },
-    flightId: { type: mongoose.Schema.Types.ObjectId, ref: 'flights' }
+    flightId: { type: mongoose.Schema.Types.ObjectId, ref: 'Flight' }
     
 });
 

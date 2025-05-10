@@ -71,16 +71,25 @@ async function getPassengers(req, res) {
     }
 }
 //function to post a new Passenger
-async function createPassenger(req,res){
-    
-        try {
-            
-            const passenger = await Fruit.create(req.body);
-            res.json(passenger);
-          } catch (error) {
-            console.log(error);
-          }
-    
+async function createPassenger(req, res) {
+    try {
+        
+        const passenger = await Passenger.create(req.body);
+        console.log(passenger);
+        res.status(201).json(passenger);
+    } catch (error) {
+        res.status(400).json({ error: error.message });
+    }
 }
 
-export {seedPassenger,getPassengers,createPassenger}
+async function deletePassenger(req, res) {
+    try {
+        await Passenger.findByIdAndDelete(req.params.id);
+        res.send("Deleted the Passenger");
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+
+export {seedPassenger,getPassengers,createPassenger,deletePassenger}

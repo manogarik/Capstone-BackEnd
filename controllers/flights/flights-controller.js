@@ -151,6 +151,12 @@ async function searchFlight(req, res){
         }
       }
   
+      //function to add passengers to flight
+      async function addPassenger(req,res){
+        try{
+            const 
+        }
+      }
   
   
   
