@@ -91,5 +91,17 @@ async function deletePassenger(req, res) {
     }
 }
 
+async function updatePassenger(req,res){
+        try{
+            
+            const flight = await Passenger.findByIdAndUpdate(req.params.id,req.body)
+            if(!flight)
+                console.log("Flight not found");
+        
+            res.json(flight);
+    } catch (error) {
+        console.log(error);
+    }
+}
 
-export {seedPassenger,getPassengers,createPassenger,deletePassenger}
+export {seedPassenger,getPassengers,createPassenger,deletePassenger,updatePassenger}
