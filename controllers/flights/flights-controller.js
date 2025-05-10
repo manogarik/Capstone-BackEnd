@@ -142,7 +142,7 @@ async function searchFlight(req, res){
      
     };
 
-    async function getFlightPassgenerInfo(req, res) {
+    async function getFlightPassengerInfo(req, res) {
         try {
           const flight = await Flight.findById(req.params.id).populate('passengers');
           res.json(flight);

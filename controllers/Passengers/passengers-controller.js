@@ -70,5 +70,17 @@ async function getPassengers(req, res) {
         res.status(400).json({ error: error.message });
     }
 }
+//function to post a new Passenger
+async function createPassenger(req,res){
+    
+        try {
+            
+            const passenger = await Fruit.create(req.body);
+            res.json(passenger);
+          } catch (error) {
+            console.log(error);
+          }
+    
+}
 
-export {seedPassenger,getPassengers}
+export {seedPassenger,getPassengers,createPassenger}
