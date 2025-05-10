@@ -154,12 +154,21 @@ async function searchFlight(req, res){
       //function to add passengers to flight
       async function addPassenger(req,res){
         try{
-            const 
+            const flightId = req.params.id;
+            const {passengerId} = req.body;
+            const flight = await Flight.findByIdAndUpdate(flightId,{$push :{passengers : passengerId}}).populate('passengers')
+            if(!flight)
+                console.log("Flight not found");
+        
+            res.json(flight);
+    } catch (error) {
+        console.log(error);
+    }
         }
-      }
+      
   
   
   
   
 
- export {seedFlights,getFlights,createFlight,searchFlight,airports}
+ export {seedFlights,getFlights,createFlight,searchFlight,airports,addPassenger}
