@@ -29,6 +29,7 @@ router.get('/', flightsController.getFlights);
  //router to get distinct airports
  router.get('/airports',flightsController.airports);
 
+ router.get('/:id',flightsController.getFlightPassengerInfo)
  //router to add a passenger to flight
  router.put('/:id/addpassenger',flightsController.addPassenger);
 

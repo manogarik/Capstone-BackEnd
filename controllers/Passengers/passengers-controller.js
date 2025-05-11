@@ -86,6 +86,11 @@ async function deletePassenger(req, res) {
     try {
         await Passenger.findByIdAndDelete(req.params.id);
         res.send("Deleted the Passenger");
+
+        await Flight.updateMany(
+            { passengers: id },
+            { $pull: { passengers: id } }
+          );
     } catch (error) {
         console.error(error);
     }

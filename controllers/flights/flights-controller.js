@@ -171,4 +171,4 @@ async function searchFlight(req, res){
   
   
 
- export {seedFlights,getFlights,createFlight,searchFlight,airports,addPassenger}
+ export {seedFlights,getFlights,createFlight,searchFlight,airports,addPassenger,getFlightPassengerInfo}
