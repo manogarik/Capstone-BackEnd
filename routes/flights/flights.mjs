@@ -32,6 +32,8 @@ router.get('/', flightsController.getFlights);
  router.get('/:id',flightsController.getFlightPassengerInfo)
  //router to add a passenger to flight
  router.put('/:id/addpassenger',flightsController.addPassenger);
+ //router to delete a passenger from a flight
+ router.delete('/:flightId/passengers/:passengerId',flightsController.deletePassengerfromFlight)
 
 
 export default router;

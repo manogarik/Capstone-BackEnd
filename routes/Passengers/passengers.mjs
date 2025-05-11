@@ -16,5 +16,5 @@ router.post('/',passengersController.createPassenger);
 router.put('/',passengersController.updatePassenger);
 
 //Route to delete a passenger
-router.delete('/:id/addpassenger',passengersController.deletePassenger);
+router.delete('/:id',passengersController.deletePassenger);
 export default router;

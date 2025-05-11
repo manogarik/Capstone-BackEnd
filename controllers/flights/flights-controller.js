@@ -165,10 +165,27 @@ async function searchFlight(req, res){
         console.log(error);
     }
         }
+
+        //function to delete passengers from a flight
+        async function deletePassengerfromFlight(req,res){
+            try{
+                const {flightId,passengerId} = req.params;
+                
+                const flight = await Flight.findByIdAndUpdate(flightId,{$pull :{passengers : passengerId}}).populate('passengers')
+                if(!flight)
+                    console.log("Flight not found");
+                
+                
+
+                res.json(flight);
+        } catch (error) {
+            console.log(error);
+        }
+            }
       
   
   
   
   
 
- export {seedFlights,getFlights,createFlight,searchFlight,airports,addPassenger,getFlightPassengerInfo}
+ export {seedFlights,getFlights,createFlight,searchFlight,airports,addPassenger,getFlightPassengerInfo,deletePassengerfromFlight}
