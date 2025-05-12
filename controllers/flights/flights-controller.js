@@ -84,6 +84,56 @@ async function seedFlights(req, res) {
                 arrivalTime: "2025-09-17T08:00:00Z",
                 status: "On Time",
                 price:150
+            },
+            {
+                flightNumber: "FM554",
+                origin: "DCA",
+                destination: "BOS",
+                departureDate:"2025-06-24",
+                departureTime: "2025-06-24T10:10:00Z",
+                arrivalTime: "2025-06-24T11:46:00Z",
+                status: "On Time",
+                price:191
+            },
+            {
+                flightNumber: "FM1554",
+                origin: "DCA",
+                destination: "BOS",
+                departureDate:"2025-06-03",
+                departureTime: "2025-09-03T07:00:00Z",
+                arrivalTime: "2025-09-17T08:32:00Z",
+                status: "On Time",
+                price:79
+            },
+            {
+                flightNumber: "FM1254",
+                origin: "DCA",
+                destination: "BOS",
+                departureDate:"2025-09-17",
+                departureTime: "2025-09-17T12:45:00Z",
+                arrivalTime: "2025-09-17T14:15:00Z",
+                status: "On Time",
+                price:79
+            },
+            {
+                flightNumber: "FM2154",
+                origin: "DCA",
+                destination: "BOS",
+                departureDate:"2025-06-03",
+                departureTime: "2025-06-03T15:15:00Z",
+                arrivalTime: "2025-06-03T16:53:00Z",
+                status: "On Time",
+                price:79
+            },
+            {
+                flightNumber: "FM2754",
+                origin: "DCA",
+                destination: "BOS",
+                departureDate:"2025-05-31",
+                departureTime: "2025-05-31T18:15:00Z",
+                arrivalTime: "2025-05-31T19:53:00Z",
+                status: "On Time",
+                price:90
             }
             
         );
