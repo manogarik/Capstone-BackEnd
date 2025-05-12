@@ -134,10 +134,22 @@ async function seedFlights(req, res) {
                 arrivalTime: "2025-05-31T19:53:00Z",
                 status: "On Time",
                 price:90
-            }
+            },
+            {
+                flightNumber: "FM617",
+                origin: "DCA",
+                destination: "JFK",
+                departureDate:"2025-06-06",
+                departureTime: "2025-06-06T06:15:00Z",
+                arrivalTime: "2025-06-06T07:20:00Z",
+                status: "On Time",
+                price:65
+            },
+            
             
         );
         res.status(201).redirect('/flights');
+        
     } catch (error) {
         res.status(400).json({ error: error.message });
     }
