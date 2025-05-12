@@ -14,7 +14,6 @@ const passengerSchema = new mongoose.Schema({
         type:String,
         lowercase:true,
         match: [/^\S+@\S+\.\S+$/, 'Please provide a valid email address'],
-        unique:true,
         required:true,
     },
     age : {
