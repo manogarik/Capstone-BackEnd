@@ -255,6 +255,36 @@ async function seedFlights(req, res) {
                 status: "On Time",
                 price:165
             },
+            {
+                flightNumber: "FM5271",
+                origin: "IAD",
+                destination: "JFK",
+                departureDate:"2025-05-20",
+                departureTime: "2025-05-20T12:20:00Z",
+                arrivalTime: "2025-05-20T13:46:00Z",
+                status: "On Time",
+                price:147
+            },
+            {
+                flightNumber: "FM5272",
+                origin: "IAD",
+                destination: "JFK",
+                departureDate:"2025-05-28",
+                departureTime: "2025-05-28T20:30:00Z",
+                arrivalTime: "2025-05-28T22:00:00Z",
+                status: "On Time",
+                price:147
+            },
+            {
+                flightNumber: "FM5447",
+                origin: "IAD",
+                destination: "JFK",
+                departureDate:"2025-05-28",
+                departureTime: "2025-05-28T17:25:00Z",
+                arrivalTime: "2025-05-28T19:20:00Z",
+                status: "On Time",
+                price:205
+            },
             
             
         );
