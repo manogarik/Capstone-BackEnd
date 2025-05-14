@@ -437,6 +437,30 @@ async function seedFlights(req, res) {
                 price:335
             },
 
+            //SFO-LAS FLIGHTS
+
+            {
+                flightNumber: "FM718",
+                origin: "SFO",
+                destination: "LAS",
+                departureDate:"2025-06-21",
+                departureTime: "2025-06-21T08:40:00Z",
+                arrivalTime: "2025-06-21T10:30:00Z",
+                status: "On Time",
+                price:130
+            },
+            {
+                flightNumber: "FM2486",
+                origin: "SFO",
+                destination: "LAS",
+                departureDate:"2025-06-21",
+                departureTime: "2025-06-21T13:09:00Z",
+                arrivalTime: "2025-06-21T14:48:00Z",
+                status: "On Time",
+                price:106
+            },
+
+
             
         );
         res.status(201).redirect('/flights');
