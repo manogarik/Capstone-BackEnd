@@ -285,7 +285,56 @@ async function seedFlights(req, res) {
                 status: "On Time",
                 price:205
             },
-            
+            {
+                flightNumber: "FM2710",
+                origin: "IAD",
+                destination: "BOS",
+                departureDate:"2025-06-08",
+                departureTime: "2025-06-08T12:35:00Z",
+                arrivalTime: "2025-06-08T14:15:00Z",
+                status: "On Time",
+                price:220
+            },
+            {
+                flightNumber: "FM755",
+                origin: "IAD",
+                destination: "BOS",
+                departureDate:"2025-06-09",
+                departureTime: "2025-06-09T10:30:00Z",
+                arrivalTime: "2025-06-09T12:00:00Z",
+                status: "On Time",
+                price:200
+            },
+            {
+                flightNumber: "FM1323",
+                origin: "IAD",
+                destination: "LAS",
+                departureDate:"2025-06-04",
+                departureTime: "2025-06-04T09:00:00Z",
+                arrivalTime: "2025-06-04T10:50:00Z",
+                status: "On Time",
+                price:267
+            },
+            {
+                flightNumber: "FM1668",
+                origin: "IAD",
+                destination: "LAS",
+                departureDate:"2025-06-04",
+                departureTime: "2025-06-04T19:40:00Z",
+                arrivalTime: "2025-06-04T21:45:00Z",
+                status: "On Time",
+                price:265
+            },
+            {
+                flightNumber: "FM780",
+                origin: "IAD",
+                destination: "LAS",
+                departureDate:"2025-06-05",
+                departureTime: "2025-06-05T15:45:00Z",
+                arrivalTime: "2025-06-05T17:20:00Z",
+                status: "On Time",
+                price:410
+            },
             
         );
         res.status(201).redirect('/flights');
