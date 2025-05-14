@@ -415,6 +415,28 @@ async function seedFlights(req, res) {
             },
 
 
+            //SFO-JFK
+            {
+                flightNumber: "FM316",
+                origin: "SFO",
+                destination: "JFK",
+                departureDate:"2025-06-18",
+                departureTime: "2025-06-18T07:40:00Z",
+                arrivalTime: "2025-06-18T16:15:00Z",
+                status: "On Time",
+                price:415
+            },
+            {
+                flightNumber: "FM6116",
+                origin: "SFO",
+                destination: "JFK",
+                departureDate:"2025-06-21",
+                departureTime: "2025-06-21T06:00:00Z",
+                arrivalTime: "2025-06-21T14:40:00Z",
+                status: "On Time",
+                price:335
+            },
+
             
         );
         res.status(201).redirect('/flights');
