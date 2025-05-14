@@ -5,6 +5,8 @@ async function seedFlights(req, res) {
     try {
         await Flight.deleteMany({});
         await Flight.create(
+
+            //IAD- RDU
             {
                 flightNumber: "FM202",
                 origin: "IAD",
@@ -16,6 +18,20 @@ async function seedFlights(req, res) {
                 price:270
             },
             {
+                flightNumber: "FM009",
+                origin: "IAD",
+                destination: "RDU",
+                departureDate:"2025-06-02",
+                departureTime: "2025-06-02T07:00:00Z",
+                arrivalTime: "2025-06-02T08:00:00Z",
+                status: "On Time",
+                price:150
+            },
+            
+
+            //RDU-LAS
+
+            {
                 flightNumber: "FM210",
                 origin: "RDU",
                 destination: "LAS",
@@ -25,6 +41,10 @@ async function seedFlights(req, res) {
                 status: "On Time",
                 price:150
             },
+
+
+            //SFO - RDU FLIGHTS
+
             {
                 flightNumber: "FM304",
                 origin: "SFO",
@@ -35,6 +55,9 @@ async function seedFlights(req, res) {
                 status: "Delayed",
                 price:350
             },
+
+            //RDU-JFK FLIGHTS
+
             {
                 flightNumber: "FM109",
                 origin: "RDU",
@@ -45,6 +68,10 @@ async function seedFlights(req, res) {
                 status: "Delayed",
                 price:290
             },
+
+
+            //RDU-BOS FLIGHTS
+
             {
                 flightNumber: "FM001",
                 origin: "RDU",
@@ -55,6 +82,12 @@ async function seedFlights(req, res) {
                 status: "On Time",
                 price:190
             },
+
+
+            //DCA-RDU FLIGHTS
+
+
+
             {
                 flightNumber: "FM006",
                 origin: "DCA",
@@ -75,16 +108,12 @@ async function seedFlights(req, res) {
                 status: "On Time",
                 price:160
             },
-            {
-                flightNumber: "FM009",
-                origin: "IAD",
-                destination: "RDU",
-                departureDate:"2025-06-02",
-                departureTime: "2025-06-02T07:00:00Z",
-                arrivalTime: "2025-06-02T08:00:00Z",
-                status: "On Time",
-                price:150
-            },
+           
+
+
+            //DCA-BOS FLIGHTS
+
+
             {
                 flightNumber: "FM554",
                 origin: "DCA",
@@ -135,6 +164,10 @@ async function seedFlights(req, res) {
                 status: "On Time",
                 price:90
             },
+
+
+            //DCA - JFK FLIGHTS
+
             {
                 flightNumber: "FM617",
                 origin: "DCA",
@@ -175,6 +208,11 @@ async function seedFlights(req, res) {
                 status: "On Time",
                 price:65
             },
+
+
+            //DCA - LAS FLIGHTS
+
+
             {
                 flightNumber: "FM511",
                 origin: "DCA",
@@ -215,6 +253,9 @@ async function seedFlights(req, res) {
                 status: "On Time",
                 price:223
             },
+
+            //DCA-JFK FLIGHTS
+
             {
                 flightNumber: "FM254",
                 origin: "DCA",
@@ -224,6 +265,66 @@ async function seedFlights(req, res) {
                 arrivalTime: "2025-06-16T18:20:00Z",
                 status: "On Time",
                 price:165
+            },
+           
+
+
+            //IAD - JFK FLIGHTS
+
+
+
+            {
+                flightNumber: "FM5271",
+                origin: "IAD",
+                destination: "JFK",
+                departureDate:"2025-05-20",
+                departureTime: "2025-05-20T12:20:00Z",
+                arrivalTime: "2025-05-20T13:46:00Z",
+                status: "On Time",
+                price:147
+            },
+            {
+                flightNumber: "FM5272",
+                origin: "IAD",
+                destination: "JFK",
+                departureDate:"2025-05-28",
+                departureTime: "2025-05-28T20:30:00Z",
+                arrivalTime: "2025-05-28T22:00:00Z",
+                status: "On Time",
+                price:147
+            },
+            {
+                flightNumber: "FM5447",
+                origin: "IAD",
+                destination: "JFK",
+                departureDate:"2025-05-28",
+                departureTime: "2025-05-28T17:25:00Z",
+                arrivalTime: "2025-05-28T19:20:00Z",
+                status: "On Time",
+                price:205
+            },
+
+            //IAD-BOS FLIGHTS
+
+            {
+                flightNumber: "FM2710",
+                origin: "IAD",
+                destination: "BOS",
+                departureDate:"2025-06-08",
+                departureTime: "2025-06-08T12:35:00Z",
+                arrivalTime: "2025-06-08T14:15:00Z",
+                status: "On Time",
+                price:220
+            },
+            {
+                flightNumber: "FM755",
+                origin: "IAD",
+                destination: "BOS",
+                departureDate:"2025-06-09",
+                departureTime: "2025-06-09T10:30:00Z",
+                arrivalTime: "2025-06-09T12:00:00Z",
+                status: "On Time",
+                price:200
             },
             {
                 flightNumber: "FM254",
@@ -255,56 +356,10 @@ async function seedFlights(req, res) {
                 status: "On Time",
                 price:165
             },
-            {
-                flightNumber: "FM5271",
-                origin: "IAD",
-                destination: "JFK",
-                departureDate:"2025-05-20",
-                departureTime: "2025-05-20T12:20:00Z",
-                arrivalTime: "2025-05-20T13:46:00Z",
-                status: "On Time",
-                price:147
-            },
-            {
-                flightNumber: "FM5272",
-                origin: "IAD",
-                destination: "JFK",
-                departureDate:"2025-05-28",
-                departureTime: "2025-05-28T20:30:00Z",
-                arrivalTime: "2025-05-28T22:00:00Z",
-                status: "On Time",
-                price:147
-            },
-            {
-                flightNumber: "FM5447",
-                origin: "IAD",
-                destination: "JFK",
-                departureDate:"2025-05-28",
-                departureTime: "2025-05-28T17:25:00Z",
-                arrivalTime: "2025-05-28T19:20:00Z",
-                status: "On Time",
-                price:205
-            },
-            {
-                flightNumber: "FM2710",
-                origin: "IAD",
-                destination: "BOS",
-                departureDate:"2025-06-08",
-                departureTime: "2025-06-08T12:35:00Z",
-                arrivalTime: "2025-06-08T14:15:00Z",
-                status: "On Time",
-                price:220
-            },
-            {
-                flightNumber: "FM755",
-                origin: "IAD",
-                destination: "BOS",
-                departureDate:"2025-06-09",
-                departureTime: "2025-06-09T10:30:00Z",
-                arrivalTime: "2025-06-09T12:00:00Z",
-                status: "On Time",
-                price:200
-            },
+
+
+
+            //IAD - LAS FLIGHTS
             {
                 flightNumber: "FM1323",
                 origin: "IAD",
@@ -335,6 +390,31 @@ async function seedFlights(req, res) {
                 status: "On Time",
                 price:410
             },
+
+
+            //SFO - BOS FLIGHTS
+            {
+                flightNumber: "FM400",
+                origin: "SFO",
+                destination: "BOS",
+                departureDate:"2025-06-18",
+                departureTime: "2025-06-18T07:10:00Z",
+                arrivalTime: "2025-06-18T15:45:00Z",
+                status: "On Time",
+                price:288
+            },
+            {
+                flightNumber: "FM362",
+                origin: "SFO",
+                destination: "BOS",
+                departureDate:"2025-06-18",
+                departureTime: "2025-06-18T12:45:00Z",
+                arrivalTime: "2025-06-18T21:38:00Z",
+                status: "On Time",
+                price:328
+            },
+
+
             
         );
         res.status(201).redirect('/flights');
