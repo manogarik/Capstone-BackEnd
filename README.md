@@ -11,7 +11,7 @@ This backend application provides RESTful APIs for the Reservation System, enabl
 + Perform CRUD operations on passenger data
 
 ### :hammer_and_wrench: FrontEnd (React)
-[https://github.com/manogarik/Capstone-Frontend]
+[(https://github.com/manogarik/MK-CapstoneFrontEnd)]
 
 ### 🛠️  Technologies Used
 
