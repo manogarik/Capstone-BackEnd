@@ -54,6 +54,12 @@ backend/
 
 +  POST /passengers/ : Adds a new passenger to the collection.
 +  DELETE /passengers/:id : Deletes a passenger from the collection.
+
+#### ⚙️ Setup Instructions
+
+1. **Navigate to the directory**
+   cd Capstone-Backend
+
  
 
 
