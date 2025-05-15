@@ -43,6 +43,16 @@ backend/
 
 #### Flights
 
++  GET /flights/seed : Initially seed flights into the Flights collection.
++  GET /flights/search?origin=XXX&destination=YYY : Search for flights based on criteria
++  GET /flights/airports : Fetches the origin and destination airports available so the user can select one from the list.
++  GET /flights/:id : Gets the passenger details using populate from a flight with the given flight id.
++  PUT /flights/:id/addpassenger : Updates the passenger array in the flights collection as the passenger gets added.
++  DELETE /flights/:flightId/passengers/:passengerId : Remove the passenger from the flight when the passenger gets deleted.
+
+#### Passengers
+
+
 
 
 
