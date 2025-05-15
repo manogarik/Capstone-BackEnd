@@ -18,7 +18,7 @@ This backend application provides RESTful APIs for the Reservation System, enabl
 +  **dotenv** for environment variable management
 
 
-## 📁 Project Structure
+### 📁 Project Structure
 
 ```
 backend/
@@ -39,6 +39,10 @@ backend/
 ├── index.mjs
 └── package.json
 ```
+### 📄 API Endpoints
+
+#### Flights
+
 
 
 
