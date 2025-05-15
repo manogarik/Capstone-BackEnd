@@ -17,25 +17,29 @@ This backend application provides RESTful APIs for the Reservation System, enabl
 +  **CORS** for handling cross-origin requests
 +  **dotenv** for environment variable management
 
-### 📁 Project Structure
- backend/
+
+## 📁 Project Structure
+
+```
+backend/
 ├── controllers/
-│   ├── flights
-|          |--flights-controller.js
-│   └── Passengers
-|          |--passengers-controller.js
-├── Models/
+│   ├── flights/
+│   │   └── flights-controller.js
+│   └── passengers/
+│       └── passengers-controller.js
+├── models/
 │   ├── Flights.mjs
 │   └── Passengers.mjs
 ├── routes/
-│   ├── flights
-|            |--flights.mjs
-│   └── Passengers
-|            |--passengers.mjs
-|
+│   ├── flights/
+│   │   └── flights.mjs
+│   └── passengers/
+│       └── passengers.mjs
 ├── .env
 ├── index.mjs
 └── package.json
+```
+
 
 
 
