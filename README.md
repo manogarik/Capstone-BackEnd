@@ -52,6 +52,10 @@ backend/
 
 #### Passengers
 
++  POST /passengers/ : Adds a new passenger to the collection.
++  DELETE /passengers/:id : Deletes a passenger from the collection.
+ 
+
 
 
 
