@@ -61,6 +61,10 @@ backend/
    ```
    cd Capstone-Backend
    ```
+2. **Install Dependencies**
+   ```
+   npm install nodemon mongoose express dotenv cors
+   ```
  
 
 
