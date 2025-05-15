@@ -11,7 +11,7 @@ const router = express.Router();
 
 ///// Seed /////
 
-router.get('/seed', flightsController.seedFlights);
+
 
 ///// INDUCES /////
 
