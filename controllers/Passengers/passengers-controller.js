@@ -87,7 +87,7 @@ async function deletePassenger(req, res) {
     try {
         await Passenger.findByIdAndDelete(req.params.id);
         res.send("Deleted the Passenger");
-        
+
         
     } catch (error) {
         console.error(error);
@@ -97,11 +97,11 @@ async function deletePassenger(req, res) {
 async function updatePassenger(req,res){
         try{
             
-            const flight = await Passenger.findByIdAndUpdate(req.params.id,req.body)
-            if(!flight)
-                console.log("Flight not found");
+            const passenger = await Passenger.findByIdAndUpdate(req.params.id,req.body)
+            if(!passenger)
+                console.log("passenger not found");
         
-            res.json(flight);
+            res.json(passenger);
     } catch (error) {
         console.log(error);
     }
