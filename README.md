@@ -58,8 +58,9 @@ backend/
 #### ⚙️ Setup Instructions
 
 1. **Navigate to the directory**
+   ```
    cd Capstone-Backend
-
+   ```
  
 
 
