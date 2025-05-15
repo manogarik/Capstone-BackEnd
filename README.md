@@ -65,7 +65,12 @@ backend/
    ```
    npm install nodemon mongoose express dotenv cors
    ```
- 
+3. **Configure Environment variables**
+   Create a .env file in the directory with the following content:
+   ```
+   ATLAS_URI =mongodb+srv://manogarikumaraguru:ManoMongo2025@mongopractice.t0opbtz.mongodb.net/FlyMate
+   PORT =3000
+   ```
 
 
 
