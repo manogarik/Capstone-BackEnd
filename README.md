@@ -10,6 +10,33 @@ This backend application provides RESTful APIs for the Reservation System, enabl
 + Fill out a form to add passenger information
 + Perform CRUD operations on passenger data
 
-🛠️ ### Technologies Used
+### 🛠️  Technologies Used
+
++  **Node.js** and **Express.js** for server-side development
++  **MongoDB** with **Mongoose** for database management
++  **CORS** for handling cross-origin requests
++  **dotenv** for environment variable management
+
+### 📁 Project Structure
+ backend/
+├── controllers/
+│   ├── flights
+|          |--flights-controller.js
+│   └── Passengers
+|          |--passengers-controller.js
+├── Models/
+│   ├── Flights.mjs
+│   └── Passengers.mjs
+├── routes/
+│   ├── flights
+|            |--flights.mjs
+│   └── Passengers
+|            |--passengers.mjs
+|
+├── .env
+├── index.mjs
+└── package.json
+
+
 
 
