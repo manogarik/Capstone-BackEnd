@@ -71,6 +71,11 @@ backend/
    ATLAS_URI =mongodb+srv://manogarikumaraguru:ManoMongo2025@mongopractice.t0opbtz.mongodb.net/FlyMate
    PORT =3000
    ```
+4. **Start the Server**
+   ```
+   node index.mjs
+   ```
+   The server will run at http://localhost:3000.
 
 
 
