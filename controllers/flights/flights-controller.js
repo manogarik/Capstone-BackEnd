@@ -440,7 +440,7 @@ async function seedFlights(req, res) {
                 arrivalTime: "2025-06-21T14:48:00Z",
                 status: "On Time",
                 price:106
-            },
+            }
 
 
             
