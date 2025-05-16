@@ -51,7 +51,7 @@ async function seedFlights(req, res) {
                 destination: "RDU",
                 departureDate:"2025-09-09",
                 departureTime: "2025-09-09T07:30:00Z",
-                arrivalTime: "2025-09-09T09:17:00Z",
+                arrivalTime: "2025-09-09T14:17:00Z",
                 status: "Delayed",
                 price:350
             },
@@ -78,7 +78,7 @@ async function seedFlights(req, res) {
                 destination: "BOS",
                 departureDate:"2025-06-09",
                 departureTime: "2025-06-09T07:00:00Z",
-                arrivalTime: "2025-09-09T11:30:00Z",
+                arrivalTime: "2025-06-09T11:30:00Z",
                 status: "On Time",
                 price:190
             },
@@ -92,7 +92,7 @@ async function seedFlights(req, res) {
                 flightNumber: "FM006",
                 origin: "DCA",
                 destination: "RDU",
-                departureDate:"2025-08-09",
+                departureDate:"2025-06-09",
                 departureTime: "2025-06-09T06:30:00Z",
                 arrivalTime: "2025-06-09T07:30:00Z",
                 status: "On Time",
@@ -104,7 +104,7 @@ async function seedFlights(req, res) {
                 destination: "RDU",
                 departureDate:"2025-08-10",
                 departureTime: "2025-08-10T07:00:00Z",
-                arrivalTime: "2025-06-10T08:00:00Z",
+                arrivalTime: "2025-08-10T08:00:00Z",
                 status: "On Time",
                 price:160
             },
@@ -129,8 +129,8 @@ async function seedFlights(req, res) {
                 origin: "DCA",
                 destination: "BOS",
                 departureDate:"2025-06-03",
-                departureTime: "2025-09-03T07:00:00Z",
-                arrivalTime: "2025-09-17T08:32:00Z",
+                departureTime: "2025-06-03T07:00:00Z",
+                arrivalTime: "2025-06-03T08:32:00Z",
                 status: "On Time",
                 price:79
             },
@@ -229,7 +229,7 @@ async function seedFlights(req, res) {
                 destination: "LAS",
                 departureDate:"2025-06-26",
                 departureTime: "2025-06-26T06:30:00Z",
-                arrivalTime: "2025-06-26T18:20:00Z",
+                arrivalTime: "2025-06-26T08:20:00Z",
                 status: "On Time",
                 price:183
             },
@@ -239,7 +239,7 @@ async function seedFlights(req, res) {
                 destination: "LAS",
                 departureDate:"2025-07-19",
                 departureTime: "2025-07-19T11:15:00Z",
-                arrivalTime: "2025-06-26T19:42:00Z",
+                arrivalTime: "2025-07-19T13:42:00Z",
                 status: "Delayed",
                 price:165
             },
@@ -249,23 +249,14 @@ async function seedFlights(req, res) {
                 destination: "LAS",
                 departureDate:"2025-06-26",
                 departureTime: "2025-06-26T17:15:00Z",
-                arrivalTime: "2025-06-26T22:20:00Z",
+                arrivalTime: "2025-06-26T20:20:00Z",
                 status: "On Time",
                 price:223
             },
 
             //DCA-JFK FLIGHTS
 
-            {
-                flightNumber: "FM254",
-                origin: "DCA",
-                destination: "JFK",
-                departureDate:"2025-06-16",
-                departureTime: "2025-06-16T06:15:00Z",
-                arrivalTime: "2025-06-16T18:20:00Z",
-                status: "On Time",
-                price:165
-            },
+            
            
 
 
@@ -326,16 +317,7 @@ async function seedFlights(req, res) {
                 status: "On Time",
                 price:200
             },
-            {
-                flightNumber: "FM254",
-                origin: "IAD",
-                destination: "BOS",
-                departureDate:"2025-06-16",
-                departureTime: "2025-06-16T06:15:00Z",
-                arrivalTime: "2025-06-16T18:20:00Z",
-                status: "On Time",
-                price:65
-            },
+            
             {
                 flightNumber: "FM111",
                 origin: "IAD",

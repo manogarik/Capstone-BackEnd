@@ -48,4 +48,4 @@ async function updatePassenger(req,res){
     }
 }
 
-export {seedPassenger,getPassengers,createPassenger,deletePassenger,updatePassenger}
+export {getPassengers,createPassenger,deletePassenger,updatePassenger}
