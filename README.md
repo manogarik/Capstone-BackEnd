@@ -81,8 +81,7 @@ backend/
    ```
    node index.mjs
    ```
-   The server will run at http://localhost:3000.
-
+   
 
 
 
